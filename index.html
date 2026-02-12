@@ -8,8 +8,8 @@
     </head>
     <body>
         <h1>Happy Valentine’s Day, Babe❤️</h1> 
-    <audio autoplay loop>
-    <source src="Danya-Devs-Asambe-(Afrohousekings.co.za).mp3" type="audio/mp3">
+    <audio loop>
+    <source src="Danya-Devs-Asambe-(Afrohousekings.co.za).mp3" type="audio/mpeg">
     </audio>
        
      
@@ -42,14 +42,22 @@
         <p><strong>Yours Promise</strong></p>
          </div>
   <script>
-function sayYes() {
-    document.getElementById("response").innerHTML = "Yay!! I’m the luckiest person ever ❤️";
+function startFireworks() {
+    document.getElementById("response").innerHTML =
+        "Yay!! I’m the luckiest person ever ❤️";
+
+    // start music after click
+    const music = document.getElementById("bgMusic");
+    music.play();
+
+    setInterval(createFirework, 600);
 }
 </script>
 
     
     </body>
 </html>
+
 
 
 
